@@ -59,15 +59,10 @@ int main()
 
 			case MAIN_FINISH:
 			{
-				LOG("\nApplication Start --------------");
-				if (App->CleanUp() == false)
-				{
-					LOG("\nApplication Init exits with error -----");
-					EXIT_FAILURE;
-				}
-				else {
-					EXIT_SUCCESS;
-				}
+				LOG("\nApplication Finish --------------");
+				App->CleanUp() == false;
+				main_return = EXIT_SUCCESS;
+				
 			
 				break;
 			}
